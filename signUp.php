@@ -9,9 +9,11 @@
 			Name: <input type="text" name="name" required><br><br>
 			Address: <Textarea name="address" rows="5" cols="40" required></Textarea><br><br>
 			Age: <input type="number" name="age" required min=0 max=110><br><br>
-			Gender: <input type="radio" name="gender" required>Male
-					<input type="radio" name="gender">Female
-					<input type="radio" name="gender">Other<br><br>
+			Gender:<select name="gender" required>
+			       <option value = "male">Male</option>
+				   <option value = "female">Female</option>
+				   <option value = "other">other</option> 
+				   </select> <br><br>
 			E-mail ID: <input type="email" name="email" required><br><br>
 			Phone No.: <input type="tel" name="phone" pattern="[0-9]{10}" required><br><br>
 			Password: <input type="password" name="password" id="password" onchange='check_pass();'><br><br>
