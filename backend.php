@@ -44,11 +44,11 @@
 		$data = mysqli_fetch_assoc($result);
 		if($num_rows!=0)
 		{	
-			echo "logged in";
+			$_SESSION['username'] = $email; 
 			$_SESSION['success'] = "You are now logged in";
 			$_SESSION['type'] = $data['userType'];
-			echo "lol";
-			//header('location: demoHome.php');// redirecting to homepage
+			echo "logged in";
+			header('Location: demoHome.php');// redirecting to homepage
 		}
 		else
 		{
