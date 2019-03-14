@@ -18,8 +18,6 @@
 			Phone No.: <input type="tel" name="phone" pattern="[0-9]{10}" required><br><br>
 			Password: <input type="password" name="password" id="password" onchange='check_pass();'><br><br>
 			Confirm Password : <input type="password" name="con_password" id="con_password" onchange='check_pass();'><br><br>
-			Upload ID: <br><br>
-			<input type="file" value="Upload"><br><br>
 			<span id='message'></span>
 			<input type="Submit" value="SignUp" name="signup" id="submit" disabled >
 		
