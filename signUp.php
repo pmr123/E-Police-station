@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <?php include('backend.php'); ?>
 <html>
 <head>
@@ -23,7 +24,31 @@
   }
 </style>
 <p class=" container-fluid"></p></head>
-	<body  align="middle">
+<body  align="middle">
+	
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <img class="navbar-brand" src="ep_logo.jpg" height="50%"></img>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="Ep_home.html">Home</a></li>
+        <li><a class="text-info" href="Initiatives.html">Initiatives</a></li>
+        <li><a class="text-info" href="contact.html">Contact</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="signIn.php"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
 		<form method="post">
 			<?php include('error.php'); ?>
 			<h1 class="text-danger"><marquee>

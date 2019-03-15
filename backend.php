@@ -1,5 +1,7 @@
 <?php
-    session_start();
+    if(!isset($_SESSION)){
+		session_start();
+	}
 	$errors = array();
 	$db = mysqli_connect('localhost','root','','epol');//connect to database
 	
